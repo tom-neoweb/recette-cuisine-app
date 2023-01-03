@@ -16,7 +16,7 @@ const Recettes = () => {
     return (
         <div className="main-container">
             <div className='container-search-bar'>
-                <input type="text" placeholder='Rechercher une recette...' value={inputValue} onChange={(event) => setInputValue(event.target.value)} />
+                <input type="text" placeholder='Rechercher une recette...' value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
             </div>
             <div className="container-card">
                 {

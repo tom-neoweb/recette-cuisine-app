@@ -6,7 +6,7 @@ const Card = ({ recette }) => {
         <div className='card'>
             <h2>{recette.strMeal}</h2>
             <p><strong>Origine :</strong> {recette.strArea}</p>
-            <img src={recette.strMealThumb} alt={"photos" + recette.strMeal} />
+            <img src={recette.strMealThumb} alt={"photo " + recette.strMeal} />
             <a href={recette.strSource}>Source</a>
         </div>
     );
