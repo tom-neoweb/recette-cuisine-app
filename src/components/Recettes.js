@@ -21,6 +21,7 @@ const Recettes = () => {
             <div className="container-card">
                 {
                     data?.map((meals) => (
+                            // "meals" correspond à chaque tour de boucle
                             <Card key={meals.idMeal} recette={meals}/>
                         )
                     )
