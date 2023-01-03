@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.app {
+ display: flex;
+  align-items: center;
+ flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app .container-logo {
+  margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.app .container-search-bar {
+  margin-top: 40px;
+}
+
+.app .container-search-bar input {
+  width: 300px;
+  padding: 10px 20px;
+}
+
+.app .container-search-bar .btn-submit {
+  width: 120px;
+  column-gap: 10px;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app .container-search-bar .btn-submit:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+.app .container-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin-top: 100px;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.app .container-card .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border: 1px solid black;
+  padding: 30px 0px;
+}
+
+.app .container-card h2 {
+  margin: unset;
+  text-align: center;
+  padding: 0px 13px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.app .container-card p {
+  font-family: 'Montserrat', sans-serif;
+  color: lightcoral;
+  font-weight: bold;
+}
+
+.app .container-card p > strong {
+  color: black;
+}
+
+.app .container-card .card img {
+  width: 200px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+.app .container-card a {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-decoration: none;
+  /* font-weight: bold; */
+  background-color: black;
+  padding: 10px 30px;
+}
+
+.app .container-card a:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 400px) {
+  .app .container-search-bar input {
+    width: 220px;
   }
 }
+
